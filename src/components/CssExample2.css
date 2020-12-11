@@ -1,0 +1,58 @@
+.container2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 1px solid red;
+  }
+  
+  .item2 {
+    flex: 0 0 24.4%; /*6 items per line leaving some for margin*/
+    border: 1px solid black;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+  }
+  
+  .item2:not(:nth-child(4n+1)) {
+    margin-left: calc( (100% - (24.4% * 4)) / 3 );          /*  added  */
+  }
+
+  @media (max-width: 800px) {
+    .item2 {
+        flex: 0 0 32%; /* items per line leaving some for margin*/
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+
+    .item2:not(:nth-child(4n+1)) {
+        margin-left: 0px;
+      }
+
+    .item2:not(:nth-child(3n+1)) {
+        background-color: aqua;
+        margin-left: calc( (100% - (32% * 3)) / 2 );   
+      }
+
+   
+}
+
+  @media (max-width: 500px) {
+    .item2 {
+        flex: 0 0 49%; /* items per line leaving some for margin*/
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+
+    .item2:not(:nth-child(4n+1)) {
+        margin-left: 0px;
+      }
+
+      .item2:not(:nth-child(3n+1)) {
+        margin-left: 0px;
+       
+      }
+
+    .item2:not(:nth-child(2n+1)) {
+        margin-left: calc( (100% - (49% * 2)) / 1 );  
+        background-color: aqua;
+    }
+}

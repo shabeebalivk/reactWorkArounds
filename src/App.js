@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+
+import CssExample from "./components/CssExample";
+import CssExample2 from "./components/CssExample2";
+import Ex3 from "./components/Ex3";
+import GridTile from "./components/GridTile";
+import Map from './components/Map'
+import LottieTest from './components/LottieTest'
+import animationData from './components/ok.json'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <GridTile /> */}
+      <CssExample2 />
+      {/* <Ex3 /> */}
+      {/* <Map /> */}
+      {/* <LottieTest animationData={animationData} /> */}
+    </>
   );
 }
 

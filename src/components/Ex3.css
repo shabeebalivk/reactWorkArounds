@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+/*SASS variable that determine the "min-width" of the elements*/
+ .grid {
+	/*sets the container as a grid with variable number of columns*/
+	 display: grid;
+	 grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+	 grid-gap: 1em;
+	 margin: 1em 0 3em;
+}
+/* modifiers for the grid with fixed width elements, space-around style example*/
+ .fix-grid--around {
+	 justify-items: center;
+}
+/* modifiers for the grid with fixed width elements, space-between style example*/
+ .fix-grid--between {
+	 grid-template-columns: repeat(auto-fit, 140px);
+	 justify-content: space-between;
+}
+ .grid div {
+	 height: 140px;
+	/*just centering the numbers*/
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+}
+ .fix-el {
+	 width: 140px;
+}
+/*random color generator, from @joshuajcollinsworth 's awesome pen, so credit where it's due :) https://codepen.io/joshuajcollinsworth/pen/aEJGvg*/
+ .grid div:nth-child(1), .flex div:nth-child(1) {
+	 background: #faa340;
+}
+ .grid div:nth-child(2), .flex div:nth-child(2) {
+	 background: #40128e;
+}
+ .grid div:nth-child(3), .flex div:nth-child(3) {
+	 background: #3e12e9;
+}
+ .grid div:nth-child(4), .flex div:nth-child(4) {
+	 background: #a0f687;
+}
+ .grid div:nth-child(5), .flex div:nth-child(5) {
+	 background: #259904;
+}
+ .grid div:nth-child(6), .flex div:nth-child(6) {
+	 background: #327773;
+}
+ .grid div:nth-child(7), .flex div:nth-child(7) {
+	 background: #433af9;
+}
+ .grid div:nth-child(8), .flex div:nth-child(8) {
+	 background: #877d92;
+}
+ .grid div:nth-child(9), .flex div:nth-child(9) {
+	 background: #a32cc9;
+}
+ .grid div:nth-child(10), .flex div:nth-child(10) {
+	 background: #78112a;
+}
+ .grid div:nth-child(11), .flex div:nth-child(11) {
+	 background: #4c5bde;
+}
+/*for the flexbox demonstration*/
+ .flex {
+	 margin-top: 1em;
+	 display: flex;
+	 flex-flow: row wrap;
+	 justify-content: space-between;
+}
+ .flex div {
+	 flex: 1 1 140px;
+	 height: 140px;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 margin: 1em;
+}
+/* for flexbox fixed width demonstration*/
+ .space-bt div {
+	 flex: 0 0 140px;
+}
+/* aesthetic thingies*/
+ body {
+	 font-family: 'Roboto', sans-serif;
+	 color: #333;
+	 background: #fff0e0;
+}
+ body > h1 {
+	/*clickbait :p */
+	 color: #f00;
+	 font-size: 4rem;
+}
+ body > h1, body > h2 {
+	 margin: 1rem 1rem 0 1rem;
+}
+ body > p {
+	 margin: 0.5rem 1rem;
+}
+ .header {
+	 font-size: 1.5em;
+}
+ .instruction {
+	 font-size: 1.3em;
+	 color: steelblue;
+}
+ 
