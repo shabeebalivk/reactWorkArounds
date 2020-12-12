@@ -1418,6 +1418,13 @@
     react-is "^16.8.0 || ^17.0.0"
     react-transition-group "^4.4.0"
 
+"@material-ui/icons@^4.11.2":
+  version "4.11.2"
+  resolved "https://registry.yarnpkg.com/@material-ui/icons/-/icons-4.11.2.tgz#b3a7353266519cd743b6461ae9fdfcb1b25eb4c5"
+  integrity sha512-fQNsKX2TxBmqIGJCSi3tGTO/gZ+eJgWmMJkgDiOfyNaunNaxcklJQFaFogYcFl0qFuaEz1qaXYXboa/bUXVSOQ==
+  dependencies:
+    "@babel/runtime" "^7.4.4"
+
 "@material-ui/styles@^4.11.2":
   version "4.11.2"
   resolved "https://registry.yarnpkg.com/@material-ui/styles/-/styles-4.11.2.tgz#e70558be3f41719e8c0d63c7a3c9ae163fdc84cb"
@@ -9183,6 +9190,11 @@ react-google-map-picker@^1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/react-google-map-picker/-/react-google-map-picker-1.2.2.tgz#b409769fbd9dea9633a6b6c25b9f0e52bba2ec75"
   integrity sha512-7ibXQzlmqrdiKSQAZLgl55CcfYB0HMCp+juBJPp1CyuC8un65F/XcDaF0muRCsJ+LM5KHI9KHhWQCj/fGQw8vA==
+
+react-horizontal-scrolling-menu@^0.7.8:
+  version "0.7.8"
+  resolved "https://registry.yarnpkg.com/react-horizontal-scrolling-menu/-/react-horizontal-scrolling-menu-0.7.8.tgz#9b209cb7620209fc1ae5e3fae25a0fe4d83b014e"
+  integrity sha512-81UkisL7BNdG0zboDLsNta8PZ4zrw6m5XpdOlzyxls38BSVqCkm1hsDjvAyL32XUb0UiPtpIBZDA8gI/neBEVA==
 
 react-is@^16.7.0, react-is@^16.8.1:
   version "16.13.1"

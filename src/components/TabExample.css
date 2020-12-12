@@ -1,0 +1,58 @@
+.menu-item {
+     
+    margin: 5px 20px;
+    user-select: none;
+    cursor: pointer;
+    border: none;
+     
+  }
+ 
+
+/* unwanted border on chrome */
+*:focus {
+    outline: none;
+}
+
+.menu-item-wrapper.active {
+    color: green
+}
+  
+.scroll-menu-arrow {
+    padding: 40px;
+    cursor: pointer;
+}
+
+.arrowClass {
+    padding: 5px;
+}
+
+.menuClass {
+    
+}
+
+.wrapperClass {
+    position: relative;  
+    background-color: aqua;
+    
+}
+
+.innerWrapperClass {
+    background-color: red;
+      
+}
+
+.itemClassActive {
+    color: green
+}
+
+.mainContainer {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+@media(max-width: 500px) {
+    .mainContainer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
